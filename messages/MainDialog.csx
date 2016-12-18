@@ -4,6 +4,8 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.FormFlow;
+using Microsoft.Bot.Builder.FormFlow.Advanced;
+using Microsoft.Bot.Builder.FormFlow.Json;
 using Microsoft.Bot.Connector;
 
 /// This dialog is the main bot dialog, which will call the Form Dialog and handle the results
