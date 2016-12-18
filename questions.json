@@ -1,0 +1,91 @@
+{
+  "References": [ "Microsoft.Bot.Sample.AnnotatedSandwichBot.dll" ],
+  "Imports": [ "Microsoft.Bot.Sample.AnnotatedSandwichBot.Resource" ],
+  "type": "object",
+  "required": [
+    "Sergio",
+    "ThatsIt",
+    "Nesherke",
+    "Arik"
+  ],
+  "Templates": {
+    "NotUnderstood": {
+      "Patterns": [ "\"{אני לא מבין מה אמרת \"{0",
+"\"{לא הבנתי נסה שנית \"{0" ]
+    },
+    "EnumSelectOne": {
+      "Patterns": [ "What the {&} helpful? {||}" ],
+      "ChoiceStyle": "Auto"
+    }
+  },
+  "properties": {
+    "King": {
+      "Prompt": { "Patterns": [ "השלם את המשפט: לסרגי'ו פנית 1. לא טעית 2. גם שתית 3. חומוס בפיתה רצית 4. את הדרך חציתה" ] },
+      "Before": [ { "Message": [ "שלום בן אנוש! ענה על השאלות וזכה בפרס" ] } ],
+      "Describe": { "Image": "http://demosurveybot.azurewebsites.net/images/halfon.jpg" },
+      "CorrectResponse": "1",
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 4,
+      "After": [ { "Message": [ "תודה" ] } ]
+    },    
+    "City": {
+      "Prompt": { "Patterns": [ "מה קיבלו הזוכים בתוכנית זהו-זה המקורית? 1. פלאפל 2. ראש כרוב 3. חולצה ותקליט 4. את החלסטרה" ] },
+      "Describe": "",
+      "CorrectResponse": "3",
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 4,
+      "After": [ { "Message": [ "תודה" ] } ]
+    },    
+    "Size": {
+      "Prompt": { "Patterns": [ "איך קראו לאבא של נשרקה? 1. זורבה היווני 2. מר חלפון 3. ג'וני שועלי 4. סלים וורזה" ] },
+      "Describe": "",
+      "CorrectResponse": "4",
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 4,
+      "After": [ { "Message": [ "תודה" ] } ]
+    },    
+    "Bond": {
+      "Prompt": { "Patterns": [ "איזה שיר לא של אריק איינשטין? 1. ילדים של החיים 2. שביר 3. רדיו חזק 4. זומתי ולבטי" ] },
+      "Describe": { "Image": "http://demosurveybot.azurewebsites.net/images/arik.jpg" },
+      "CorrectResponse": "3",
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 4,
+      "After": [ { "Message": [ "תודה" ] } ]
+    },    
+    "Comments": {
+      "Prompt": { "Patterns": [ "אנא הוסיפו הערות" ] },
+      "Describe": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "After": [ { "Message": [ "תודה" ] } ]
+    },
+    "Email": {
+      "Prompt": { "Patterns": [ "הקלידו כתובת דואל כדי לזכות בפרס" ] },
+      "Describe": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "After": [ { "Message": [ "להתראות ותודה!" ] } ]
+    }
+  },
+  "OnCompletion": "await context.PostAsync(\"\");"
+}
