@@ -1,5 +1,4 @@
 #r "System.Runtime"
-#r "Newtonsoft.Json"
 
 using System;
 using System.IO;
