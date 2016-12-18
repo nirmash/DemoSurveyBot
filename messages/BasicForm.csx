@@ -6,6 +6,8 @@ using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Microsoft.Bot.Builder.FormFlow;
+using Microsoft.Bot.Builder.FormFlow.Advanced;
+using Microsoft.Bot.Builder.FormFlow.Json;
 
 // For more information about this template visit http://aka.ms/azurebots-csharp-form
 [Serializable]
