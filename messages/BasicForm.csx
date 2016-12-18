@@ -16,7 +16,7 @@ public class BasicForm
     {
         string botMeta = File.ReadAllText(@"d:\home\site\wwwroot\questions.json");
         botMeta = JToken.Parse(botMeta).ToString();
-        var schema = JObject.Parse(botMeta); 
+        JObject schema = JObject.Parse(botMeta); 
         return new FormBuilderJson(schema)
             .AddRemainingFields()
             .Build();
