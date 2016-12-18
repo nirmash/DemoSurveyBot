@@ -33,14 +33,14 @@ public class BasicForm
             .AddRemainingFields()
             .Build();
     }
-
+/*
     public static IForm<BasicForm> BuildForm()
     {
         // Builds an IForm<T> based on BasicForm
         return new FormBuilder<BasicForm>().Build();
     }
-
-    public static IFormDialog<BasicForm> BuildFormDialog(FormOptions options = FormOptions.PromptInStart)
+*/
+    public static IFormDialog<JObject> BuildFormDialog(FormOptions options = FormOptions.PromptInStart)
     {
         // Generated a new FormDialog<T> based on IForm<BasicForm>
         return FormDialog.FromForm(BuildJsonForm, options);
