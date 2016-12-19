@@ -1,4 +1,3 @@
-#r "Newtonsoft.Json"
 #r "System.Runtime"
 
 using System;
