@@ -3,7 +3,8 @@
     "net46":{
       "dependencies": {
         "Microsoft.Bot.Builder.Azure": "3.1",
-        "Microsoft.Bot.Builder.FormFlow.Json": "3.1.0"
+        "Microsoft.Bot.Builder.FormFlow.Json": "3.1.0",
+        "Microsoft.Bot.Builder": "3.2.0.0"
       }
     }
    }
