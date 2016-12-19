@@ -1,4 +1,3 @@
-#r "Newtonsoft.Json"
 #load "MainDialog.csx"
 
 using System;
