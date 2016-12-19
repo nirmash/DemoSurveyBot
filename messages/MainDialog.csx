@@ -29,7 +29,7 @@ public class MainDialog : IDialog<BasicForm>
         context.Call(BasicForm.BuildFormDialog(FormOptions.PromptInStart), FormComplete);
     }
 
-    private async Task FormComplete(IDialogContext context, IAwaitable<JObject> result)
+    private async Task FormComplete(IDialogContext context, IAwaitable<BasicForm> result)
     {
         try
         {
