@@ -25,7 +25,7 @@ public class MainDialog : IDialog<BasicForm>
         return Task.CompletedTask;
     }
 
-    public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<BasicForm> argument)
+    public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IActivity> argument)
     {
         var message = await argument;
         context.Call(BasicForm.BuildFormDialog(FormOptions.PromptInStart), FormComplete);
