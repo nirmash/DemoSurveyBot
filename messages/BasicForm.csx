@@ -19,7 +19,7 @@ public class BasicForm
         JObject schema = JObject.Parse(botMeta); 
         return new FormBuilderJson(schema)
             .AddRemainingFields()
-            .Build();
+            .Build(); 
     }
 /*
     public static IForm<BasicForm> BuildForm()
