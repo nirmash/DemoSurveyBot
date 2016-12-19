@@ -3,6 +3,7 @@
 
 using System;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.FormFlow;
 using Microsoft.Bot.Builder.FormFlow.Advanced;
